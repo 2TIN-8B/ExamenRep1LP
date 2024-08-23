@@ -24,13 +24,13 @@ class ProveedorController extends Controller
 // correo - varchar
 
     public function guardarPrv(Request $request){
-        $empleado = new Proveedor();
-        $empleado->idProveedor = $request->idProveedor;
-        $empleado->nombre = $request->nombre;
-        $empleado->fechaRegistro = $request->fechaRegistro;
-        $empleado->telefono =$request->telefono;
-        $empleado->correo = $request->correo;
-        $empleado->save();
+        $Proveedor = new Proveedor();
+        $Proveedor->idProveedor = $request->idProveedor;
+        $Proveedor->nombre = $request->nombre;
+        $Proveedor->fechaRegistro = $request->fechaRegistro;
+        $Proveedor->telefono =$request->telefono;
+        $Proveedor->correo = $request->correo;
+        $Proveedor->save();
 
         return redirect('/proveedor');
     }

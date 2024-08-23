@@ -29,7 +29,7 @@
         </div>
         <div>
             <label>pagaIsv</label>
-            <input type="text" name="pagaIsv">
+            <input type="checkbox" name="pagaIsv">
         </div>
         <div>
             <button type="submit">Guardar</button>                        

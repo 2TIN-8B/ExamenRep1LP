@@ -29,7 +29,7 @@ class ProductoController extends Controller
         $producto->descripcion = $request->descripcion;
         $producto->precio = $request->precio;
         $producto->stock =$request->stock;
-        $producto->pagaIsv = $request->pagaIsv;
+        $producto->pagaIsv = $request->pagaIsv ? true : false;
         $producto->save();
 
         return redirect('/producto');
